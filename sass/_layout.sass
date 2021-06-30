@@ -1,18 +1,9 @@
-@use "_base.sass"
-body
-    max-width: 100vw
-    max-height: 100vh
-    padding: 0
-    margin: 0
-    box-sizing: border-box
-    font-family: RedHat
-    background-color: $bg-color
-    background-image: url(../assets/bg-stars.svg)
 .main-container
     width: 100%
     height: auto
     text-align: center
     margin-top: 7rem
+
 .count-down-container
     display: flex
     flex-direction: row
@@ -23,17 +14,20 @@ body
     height: auto
     margin: 0 auto
     margin-top: 5rem
+
 .items-container
     position: relative
     @include flex-col
+
 .clock-container
     @include flex-col
     justify-content: space-around
     gap: 2.5px
     box-shadow: 0px 10px 5px hsl(234, 17%, 12%)
+
 .footer-container
     position: absolute
-    width:100%
+    width: 100%
     height: auto
     min-height: 190px
     bottom: 0
@@ -41,6 +35,9 @@ body
     background-repeat: no-repeat
     background-size: cover
     background-position: 85% 100%
+    text-align: center
+    font-size: 75%
+
 .social-container
     display: flex
     flex-direction: row
@@ -51,3 +48,10 @@ body
     height: auto
     margin: 0 auto
     margin-top: 7rem
+
+.attribution
+    position: absolute
+    bottom: 0
+    right: 0
+    left: 0
+    padding: 1% 0%

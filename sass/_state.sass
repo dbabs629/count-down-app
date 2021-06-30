@@ -1,0 +1,30 @@
+@media screen and (min-width:1275px)
+    .footer-container
+        min-height: 220px
+
+@keyframes flip-flap
+    0%
+        background-color: $flap-color
+        opacity: 1
+        transform: rotateX(180deg)
+    50%
+        opacity: 0.6
+        background-color: $bg-color
+    75%
+        transform: translateY(105%)
+        opacity: 0.30
+    100%
+        opacity: 0
+
+@media only screen and (max-width:768px)
+    .count-down-container
+        width: 100%
+        height: 100%
+
+    .items-container
+        max-width: 13vw
+        max-height: 15vw
+
+    .clock-container
+        max-width: 13vw
+        max-height: 15vw
